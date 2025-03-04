@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("exa.test.template1", appContext.getPackageName());
+        assertEquals("exa.free.bbin", appContext.getPackageName());
     }
 }

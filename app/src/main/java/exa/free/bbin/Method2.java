@@ -102,7 +102,7 @@ public class Method2 extends Fragment implements AppSelector {
         }else{
             if(s2.equals("arm64-v8a")){
                 textView3.setText("Step 3 : Copy the command to clipboard :\n\n" + "cd /data/data/" + s + " && mv " + context.getExternalFilesDir(null) + "/busybox " + "/data/data/" + s + " && chmod 755 busybox");
-                textView5.setText("Step 5 : Copy the command to clipboard :\n\n" + "cd /data/data" + s);
+                textView5.setText("Step 5 : Copy the command to clipboard :\n\n" + "cd /data/data/" + s);
             }else if (s2.contains("arm")){
                 textView3.setText("Step 3 : Copy the command to clipboard :\n\n" + "cd /data/data/" + s + " && mv " + context.getExternalFilesDir(null) + "/busybox " + "/data/data/" + s + " && chmod 755 busybox");
                 textView5.setText("Step 5 : Copy the command to clipboard :\n\n" + "cd /data/data/" + s);
@@ -236,7 +236,7 @@ public class Method2 extends Fragment implements AppSelector {
         s = sharedPreferences.getString("ChoosenTerminal", "None");
         if(s2.equals("arm64-v8a")){
             textView3.setText("Step 3 : Copy the command to clipboard :\n\n" + "cd /data/data/" + s + " && mv " + context.getExternalFilesDir(null) + "/busybox " + "/data/data/" + s + " && chmod 755 busybox");
-            textView5.setText("Step 5 : Copy the command to clipboard :\n\n" + "cd /data/data" + s);
+            textView5.setText("Step 5 : Copy the command to clipboard :\n\n" + "cd /data/data/" + s);
         }else if (s2.contains("arm")){
             textView3.setText("Step 3 : Copy the command to clipboard :\n\n" + "cd /data/data/" + s + " && mv " + context.getExternalFilesDir(null) + "/busybox " + "/data/data/" + s + " && chmod 755 busybox");
             textView5.setText("Step 5 : Copy the command to clipboard :\n\n" + "cd /data/data/" + s);
